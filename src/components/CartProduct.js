@@ -5,7 +5,7 @@ import "../index.css"
 const CartProduct = (props) => {
     const { id, name, price, quantity,seller } = props.product
     const { dispatch } = React.useContext(ECommerceContext)
-    return ( <div className="card mt-2">
+    return ( <div className="card m-2">
     <div className="card-body">
     <p className="card-title">{name}</p>
     <p className="card-text">{price}</p>

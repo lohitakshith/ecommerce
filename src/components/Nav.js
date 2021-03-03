@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ECommerceContext } from '../context/context';
 const Nav = () => {
+
+  const {state} = React.useContext(ECommerceContext)
+
     return <nav className="navbar navbar-expand-lg navbar-light bg-light">
     <div className="container-fluid">
       <Link className="navbar-brand" to="/">E-Commerce</Link>
@@ -17,7 +21,7 @@ const Nav = () => {
             <Link className="nav-link" to="/features">Features</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/cart">Cart</Link>
+            <Link className="nav-link" to="/cart">Cart {state.cartProducts.length ? state.cartProducts.length : ''}</Link>
           </li>
         </ul>
       </div>

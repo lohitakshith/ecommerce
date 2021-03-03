@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { ECommerceContext } from '../context/context';
 import { ADD_PRODUCT } from "../Actions"
+import "../index.css"
+
 const Product = (props) => {
     const { id, name, price, seller } = props.product
     const { dispatch } = React.useContext(ECommerceContext)
-    return ( <div className="card mt-2">
+    return ( <div className="card m-2" style={{minWidth:300}}>
     <div className="card-body">
         <p className="card-title">{name}</p>
         <p className="card-text">{price}</p>
