@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { ECommerceContext } from '../context/context';
 import { REMOVE_PRODUCT,QUANTITY_DECREMENT, QUANTITY_INCREMENT } from "../Actions"
 import "../index.css"

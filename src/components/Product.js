@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { ECommerceContext } from '../context/context';
 import { ADD_PRODUCT } from "../Actions"
 import "../index.css"
